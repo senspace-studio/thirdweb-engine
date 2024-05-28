@@ -1,0 +1,73 @@
+{
+  "availability-zones:account=726394863183:region=ap-northeast-1": [
+    "ap-northeast-1a",
+    "ap-northeast-1c",
+    "ap-northeast-1d"
+  ],
+  "vpc-provider:account=726394863183:filter.vpc-id=vpc-089daef87b714632f:region=ap-northeast-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-089daef87b714632f",
+    "vpcCidrBlock": "10.250.0.0/16",
+    "ownerAccountId": "726394863183",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Gasha-Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-070b1c827c3de54f2",
+            "cidr": "10.250.0.0/24",
+            "availabilityZone": "ap-northeast-1a",
+            "routeTableId": "rtb-0854d042616a268d2"
+          },
+          {
+            "subnetId": "subnet-00c823c9db0e3932d",
+            "cidr": "10.250.1.0/24",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-09b429d53a3e8dd36"
+          }
+        ]
+      },
+      {
+        "name": "Gasha-Protected",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-048765aa0869a0745",
+            "cidr": "10.250.2.0/24",
+            "availabilityZone": "ap-northeast-1a",
+            "routeTableId": "rtb-0a8761765a541685c"
+          },
+          {
+            "subnetId": "subnet-0918ab81ce13d274b",
+            "cidr": "10.250.3.0/24",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-02824447d06f8a6ef"
+          }
+        ]
+      },
+      {
+        "name": "Gasha-Private",
+        "type": "Isolated",
+        "subnets": [
+          {
+            "subnetId": "subnet-03407dd7dd2697d02",
+            "cidr": "10.250.4.0/24",
+            "availabilityZone": "ap-northeast-1a",
+            "routeTableId": "rtb-01213cb19fddd844d"
+          },
+          {
+            "subnetId": "subnet-05edbcffe99170450",
+            "cidr": "10.250.5.0/24",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-0c713efd6b2d0de6e"
+          }
+        ]
+      }
+    ]
+  },
+  "security-group:account=726394863183:region=ap-northeast-1:securityGroupId=sg-0e8d56d937b854e64": {
+    "securityGroupId": "sg-0e8d56d937b854e64",
+    "allowAllOutbound": false
+  }
+}

@@ -6,7 +6,7 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5433:5432"
     deploy:
       resources:
         limits:
@@ -15,6 +15,13 @@ services:
         reservations:
           cpus: "2"
           memory: 2G
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
 
   engine:
     build:
@@ -38,3 +45,4 @@ services:
 
 volumes:
   db_data:
+  redis_data:

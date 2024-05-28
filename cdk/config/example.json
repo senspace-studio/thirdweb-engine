@@ -1,0 +1,11 @@
+{
+  "stage": "main",
+  "serviceName": "TWE",
+  "aws": {
+    "accountId": "726394863183",
+    "region": "ap-northeast-1"
+  },
+  "dbSecretSuffix": "0KWv2Z",
+  "thirdwebAPISecretKey": "EtulqmBzAslsKI0GM63wcpUhTg-HUwGR9r6NhnPAYwuZ9AV-3Vf1Rvs63SYl1PLIJInElhVJuaVQabEJLf5z0w",
+  "thirdwebEngineEncryptionPassword": "1kqp95ABE7/C8tp17SUdZvR6dabZzYhpShxwZqZ67gU="
+}
